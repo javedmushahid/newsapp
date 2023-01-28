@@ -11,7 +11,6 @@ import {
   Switch,
   Route,
   Link,
-  BrowserRouter
 } from "react-router-dom";
 
 
@@ -27,7 +26,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Router basename='/iNewsApp'>        
+        <Router>        
         <Navbar/>
         <LoadingBar
         color='#f11946'
