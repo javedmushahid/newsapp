@@ -10,7 +10,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  BrowserRouter
 } from "react-router-dom";
 
 
@@ -26,13 +27,14 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Router>        
+        <Router basename='/iNewsApp'>        
         <Navbar/>
         <LoadingBar
         color='#f11946'
         height={4}
         progress={this.state.progress}
       />
+      
         <Switch>
           <Route exact path="/"><News setProgress={this.setProgress} key="general" pageSize={9} country="in" category="General"/></Route>
           <Route exact path="/business"><News setProgress={this.setProgress}key="business" pageSize={9} country="in" category="Business"/></Route>

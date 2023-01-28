@@ -1,6 +1,6 @@
 {
   "homepage": "http://javedmushahid.github.io/iNewsApp",
-  "name": "news",
+  "name": "inewsapp",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
