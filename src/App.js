@@ -23,11 +23,12 @@ export default class App extends Component {
   setProgress=(progress)=>{
     this.setState({progress:progress})
   }
+
   render() {
     return (
       <div>
         <Router>        
-        <Navbar/>
+        <Navbar />
         <LoadingBar
         color='#f11946'
         height={4}
